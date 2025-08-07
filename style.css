@@ -49,3 +49,54 @@ body {
     width: 100%;
   }
 }
+
+.card-list {
+  display: flex;
+  gap: 1.5em;
+  grid-template-columns: 1fr;
+  padding: 2em;
+}
+
+.card {
+  background: #fff;
+  border-bottom: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.07);
+  padding: 1.5em;
+  text-align: center;
+  transition: box-shadow 0.2s;
+}
+
+.card img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.card h2 {
+  margin: 1em 0 0.5em 0;
+  font-size: 1.2em;
+  color: #2c3e50;
+}
+
+.card button {
+  margin-top: 1em;
+  padding: 0.5em 1.5em;
+  background: #e94d34;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: background 0.2s;
+}
+
+.card button:hover {
+  background: #d02d15;
+}
+
+@media (min-width: 700px) {
+  .card-list {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
